@@ -2338,7 +2338,7 @@ h6 {
   }
 }
 
-@media (max-width: 36.25em) {
+@media (max-width: 36.3125em) {
   .pricing-section__card {
     padding-top: 1.5625rem;
   }
@@ -2346,7 +2346,9 @@ h6 {
   .pricing-section__card {
     padding-bottom: 1.5625rem;
   }
+}
 
+@media (max-width: 36.25em) {
   .pricing-section__card {
     padding-bottom: 0;
   }
@@ -3240,28 +3242,28 @@ h6 {
 }
 }
 
-@media (min-width: 36.25em) and (max-width: 73.125em) {
-@supports (padding-top: clamp( 1.5625rem , 1.1324152542rem  +  1.186440678vw , 2rem )) {
+@media (min-width: 36.3125em) and (max-width: 73.125em) {
+@supports (padding-top: clamp( 1.5625rem , 1.130942275rem  +  1.1884550085vw , 2rem )) {
     .pricing-section__card {
-      padding-top: clamp( 1.5625rem , 1.1324152542rem  +  1.186440678vw , 2rem );
+      padding-top: clamp( 1.5625rem , 1.130942275rem  +  1.1884550085vw , 2rem );
     }
 }
 
-@supports not (padding-top: clamp( 1.5625rem , 1.1324152542rem  +  1.186440678vw , 2rem )) {
+@supports not (padding-top: clamp( 1.5625rem , 1.130942275rem  +  1.1884550085vw , 2rem )) {
     .pricing-section__card {
-      padding-top: calc(1.5625rem + 0.4375 * (100vw - 36.25rem) / 36.875);
+      padding-top: calc(1.5625rem + 0.4375 * (100vw - 36.3125rem) / 36.8125);
     }
 }
 
-@supports (padding-bottom: clamp( 1.5625rem , 1.1324152542rem  +  1.186440678vw , 2rem )) {
+@supports (padding-bottom: clamp( 1.5625rem , 1.130942275rem  +  1.1884550085vw , 2rem )) {
     .pricing-section__card {
-      padding-bottom: clamp( 1.5625rem , 1.1324152542rem  +  1.186440678vw , 2rem );
+      padding-bottom: clamp( 1.5625rem , 1.130942275rem  +  1.1884550085vw , 2rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.5625rem , 1.1324152542rem  +  1.186440678vw , 2rem )) {
+@supports not (padding-bottom: clamp( 1.5625rem , 1.130942275rem  +  1.1884550085vw , 2rem )) {
     .pricing-section__card {
-      padding-bottom: calc(1.5625rem + 0.4375 * (100vw - 36.25rem) / 36.875);
+      padding-bottom: calc(1.5625rem + 0.4375 * (100vw - 36.3125rem) / 36.8125);
     }
 }
 }
