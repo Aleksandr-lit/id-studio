@@ -2000,6 +2000,7 @@ h6 {
 
 @media (max-width: 455px) {
   .header__block {
+    padding-top: 0rem;
     position: fixed;
     top: 95px;
     left: -100%;
