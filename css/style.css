@@ -683,7 +683,7 @@ h6 {
 
 .header .select_form {
   width: 3.125rem;
-  min-height: 2.6875rem;
+  min-height: 2.9375rem;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
@@ -731,6 +731,7 @@ h6 {
 }
 
 .header .select__option {
+  padding-top: 0.1875rem;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -1021,6 +1022,15 @@ h6 {
   width: 8.125rem;
 }
 
+.about-section__block-more._showmore-active .about-section__more-btn._close {
+  padding-top: 0.4375rem;
+  display: block;
+}
+
+.about-section__block-more._showmore-active .about-section__more-btn._open {
+  display: none;
+}
+
 .about-section__text {
   width: 100%;
   max-width: 35.625rem;
@@ -1050,6 +1060,10 @@ h6 {
   font-size: 0.875rem;
   line-height: 121.428571%;
   /* 17/14 */
+}
+
+.about-section__more-btn._close {
+  display: none;
 }
 
 .services-section__container {

@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230609230901">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230610212516">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,8 +87,9 @@
 								importantly, we make it exciting and enjoyable for our clients.
 							</p>
 						</div>
-						<button hidden data-showmore-button type="button" class="about-section__more-btn"><span>READ
+						<button hidden data-showmore-button type="button" class="about-section__more-btn _open"><span>READ
 								MORE</span></button>
+						<button hidden data-showmore-button type="button" class="about-section__more-btn _close"><span>Hide</span></button>
 					</div>
 				</div>
 			</section>
@@ -562,6 +563,11 @@
 					<button type="button" class="question-section__btn btn">order a call</button>
 				</div>
 			</section>
+			<div data-showmore class="block">
+				<div data-showmore-content class="block__content"></div>
+				<button hidden data-showmore-button type="button" class="block__more"><span>Показати
+						ще</span><span>Скыть</span></button>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -654,7 +660,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230609230901"></script>
+	<script src="js/app.min.js?_v=20230610212516"></script>
 </body>
 
 </html>
