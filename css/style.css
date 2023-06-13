@@ -1207,6 +1207,7 @@ body::after {
 
 .about-section__title {
   width: 8.125rem;
+  font-size: 2.5rem;
 }
 
 .about-section__block-more._showmore-active .about-section__more-btn._close {
@@ -1811,10 +1812,6 @@ body::after {
             column-gap: 3rem;
   }
 
-  .description-section__title {
-    font-size: 4.125rem;
-  }
-
   .description-section__image {
     height: 46.875rem;
   }
@@ -1917,6 +1914,10 @@ body::after {
 
   .description-section__title {
     margin-bottom: 2rem;
+  }
+
+  .description-section__title {
+    font-size: 4.125rem;
   }
 
   .description-section__text {
@@ -2300,6 +2301,10 @@ body::after {
     margin-bottom: 1.25rem;
   }
 
+  .description-section__title {
+    font-size: 1.625rem;
+  }
+
   .description-section__text {
     margin-bottom: 1.25rem;
   }
@@ -2641,10 +2646,6 @@ body::after {
 }
 
 @media (max-width: 33.75em) {
-  .description-section__title {
-    font-size: 1.625rem;
-  }
-
   .description-section__btn {
     width: 100%;
   }
@@ -2880,6 +2881,18 @@ body::after {
 @supports not (margin-bottom: clamp( 1.25rem , 0.9772727273rem  +  1.3636363636vw , 2rem )) {
     .description-section__title {
       margin-bottom: calc(1.25rem + 0.75 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (font-size: clamp( 1.625rem , 0.7159090909rem  +  4.5454545455vw , 4.125rem )) {
+    .description-section__title {
+      font-size: clamp( 1.625rem , 0.7159090909rem  +  4.5454545455vw , 4.125rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.625rem , 0.7159090909rem  +  4.5454545455vw , 4.125rem )) {
+    .description-section__title {
+      font-size: calc(1.625rem + 2.5 * (100vw - 20rem) / 55);
     }
 }
 
@@ -3408,32 +3421,6 @@ body::after {
 }
 }
 
-@media (min-width: 33.75em) and (max-width: 73.125em) {
-@supports (font-size: clamp( 1.625rem , -0.5178571429rem  +  6.3492063492vw , 4.125rem )) {
-    .description-section__title {
-      font-size: clamp( 1.625rem , -0.5178571429rem  +  6.3492063492vw , 4.125rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.625rem , -0.5178571429rem  +  6.3492063492vw , 4.125rem )) {
-    .description-section__title {
-      font-size: calc(1.625rem + 2.5 * (100vw - 33.75rem) / 39.375);
-    }
-}
-
-@supports (height: clamp( 28.125rem , 12.0535714286rem  +  47.619047619vw , 46.875rem )) {
-    .description-section__image {
-      height: clamp( 28.125rem , 12.0535714286rem  +  47.619047619vw , 46.875rem );
-    }
-}
-
-@supports not (height: clamp( 28.125rem , 12.0535714286rem  +  47.619047619vw , 46.875rem )) {
-    .description-section__image {
-      height: calc(28.125rem + 18.75 * (100vw - 33.75rem) / 39.375);
-    }
-}
-}
-
 @media (max-width: 540px) and (min-width: 33.75em) {
   .description-section__title {
     font-size: 3rem;
@@ -3470,6 +3457,20 @@ body::after {
 @supports not (max-width: clamp( 20.625rem , 17.8977272727rem  +  13.6363636364vw , 28.125rem )) {
     .description-section__title {
       max-width: calc(20.625rem + 7.5 * (100vw - 20rem) / 55);
+    }
+}
+}
+
+@media (min-width: 33.75em) and (max-width: 73.125em) {
+@supports (height: clamp( 28.125rem , 12.0535714286rem  +  47.619047619vw , 46.875rem )) {
+    .description-section__image {
+      height: clamp( 28.125rem , 12.0535714286rem  +  47.619047619vw , 46.875rem );
+    }
+}
+
+@supports not (height: clamp( 28.125rem , 12.0535714286rem  +  47.619047619vw , 46.875rem )) {
+    .description-section__image {
+      height: calc(28.125rem + 18.75 * (100vw - 33.75rem) / 39.375);
     }
 }
 }
